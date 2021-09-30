@@ -1,0 +1,43 @@
+{
+  "name": "heap-map",
+  "version": "0.0.1",
+  "description": "A binary heap with a mapping of elements to indexes for more efficient lookups and modifications.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "NODE_ENV=test nyc mocha test --exit"
+  },
+  "keywords": [
+    "binary heap",
+    "data structures",
+    "heap",
+    "map",
+    "mapping",
+    "priority queue",
+    "queue"
+  ],
+  "author": "Zachary Balder",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^9.1.2",
+    "nyc": "^15.1.0",
+    "standard": "^16.0.3"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "reporter": [
+      "html",
+      "text"
+    ]
+  }
+}
